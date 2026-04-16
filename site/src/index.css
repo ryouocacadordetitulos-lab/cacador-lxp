@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #0A0A0A;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .btn-gold {
+    @apply bg-brand-gold text-black font-black uppercase tracking-wider px-8 py-4 rounded-xl
+           hover:bg-brand-gold-light transition-all duration-300 transform hover:scale-105
+           shadow-lg hover:shadow-brand-gold/40 hover:shadow-2xl;
+    animation: pulseGold 2s infinite;
+  }
+
+  .btn-gold-lg {
+    @apply btn-gold text-base sm:text-lg md:text-xl px-10 py-5 rounded-2xl;
+  }
+
+  .section-title {
+    @apply text-2xl sm:text-3xl md:text-4xl font-black uppercase leading-tight;
+  }
+
+  .gold-text {
+    @apply text-brand-gold;
+  }
+
+  .card-dark {
+    @apply bg-brand-dark-3 border border-white/10 rounded-2xl p-6 sm:p-8;
+  }
+
+  .divider-gold {
+    @apply h-1 bg-gradient-to-r from-transparent via-brand-gold to-transparent my-8;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 20px rgba(0,0,0,0.8);
+  }
+
+  .text-shadow-gold {
+    text-shadow: 0 0 30px rgba(255,184,0,0.5);
+  }
+}
+
+/* Scroll reveal animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFB800;
+  border-radius: 3px;
+}
+
+/* Countdown timer */
+.countdown-block {
+  @apply flex flex-col items-center;
+}
+
+.countdown-number {
+  @apply text-4xl sm:text-5xl font-black text-brand-gold leading-none;
+  text-shadow: 0 0 20px rgba(255,184,0,0.5);
+}
+
+.countdown-label {
+  @apply text-xs sm:text-sm text-white/60 uppercase tracking-widest mt-1;
+}

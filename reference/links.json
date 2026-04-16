@@ -1,0 +1,37 @@
+[
+  {
+    "text": "*Clique aqui para entender mais sobre o reembolso especial",
+    "href": "https://lp.cacadordetitulos.com/reembolso",
+    "rel": null,
+    "role": null,
+    "isButton": false
+  },
+  {
+    "text": "FALAR COM A EQUIPE AGORA!",
+    "href": "https://api.whatsapp.com/send/?phone=17623472427&text=Ol%C3%A1%21+Gostaria+de+receber+mais+informa%C3%A7%C3%B5es+sobre+O+DESAFIO.+Voc%C3%AA+poderia+me+ajudar%3F&type=phone_number&app_absent=0",
+    "rel": null,
+    "role": null,
+    "isButton": false
+  },
+  {
+    "text": "Política de Privacidade",
+    "href": "https://lp.cacadordetitulos.com/pt/politica-privacidade",
+    "rel": null,
+    "role": null,
+    "isButton": false
+  },
+  {
+    "text": "Termos de Uso",
+    "href": "https://lp.cacadordetitulos.com/pt/termos-uso",
+    "rel": null,
+    "role": null,
+    "isButton": false
+  },
+  {
+    "text": "",
+    "href": "https://api.whatsapp.com/send/?phone=19164608418&text&type=phone_number&app_absent=0",
+    "rel": null,
+    "role": null,
+    "isButton": false
+  }
+]

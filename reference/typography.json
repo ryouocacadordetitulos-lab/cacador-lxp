@@ -1,0 +1,9 @@
+{
+  "body": {
+    "fontFamily": "Montserrat, sans-serif",
+    "fontSize": "10px",
+    "lineHeight": "normal",
+    "fontWeight": "500"
+  },
+  "heading": null
+}
