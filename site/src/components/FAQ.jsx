@@ -43,8 +43,6 @@ function Item({ q, a }) {
   )
 }
 
-const CTA_LINK = 'https://api.whatsapp.com/send/?phone=19164608418&text&type=phone_number&app_absent=0'
-
 export default function FAQ() {
   return (
     <section className="bg-brand-dark-2 py-20 px-4">
@@ -65,20 +63,14 @@ export default function FAQ() {
           ))}
         </div>
 
-        {/* Still have doubts? */}
         <div className="reveal text-center bg-white/5 border border-white/10 rounded-2xl p-8">
           <h3 className="text-xl font-bold text-white mb-3">Você ainda tem dúvidas?</h3>
           <p className="text-white/60 text-sm mb-6">
             Está em dúvida se a Expedição é para você? Nossa equipe está pronta para te ajudar a tomar a melhor decisão.
           </p>
-          <a
-            href={CTA_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-gold inline-block"
-          >
+          <button className="btn-gold inline-block cursor-default">
             💬 Falar com a equipe agora!
-          </a>
+          </button>
         </div>
       </div>
     </section>

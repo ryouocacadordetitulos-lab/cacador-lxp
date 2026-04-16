@@ -6,22 +6,8 @@ export default function Footer() {
           <img src="./assets/logo.png" alt="Caçador de Títulos" className="h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" />
 
           <div className="flex flex-wrap justify-center gap-6 text-white/40 text-xs">
-            <a
-              href="https://lp.cacadordetitulos.com/pt/politica-privacidade"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-brand-gold transition-colors"
-            >
-              Política de Privacidade
-            </a>
-            <a
-              href="https://lp.cacadordetitulos.com/pt/termos-uso"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-brand-gold transition-colors"
-            >
-              Termos de Uso
-            </a>
+            <span className="hover:text-white/60 transition-colors cursor-default">Política de Privacidade</span>
+            <span className="hover:text-white/60 transition-colors cursor-default">Termos de Uso</span>
           </div>
         </div>
 

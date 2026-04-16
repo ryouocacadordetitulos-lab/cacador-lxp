@@ -1,5 +1,3 @@
-const CTA_LINK = 'https://api.whatsapp.com/send/?phone=17623472427&text=Ol%C3%A1%21+Gostaria+de+receber+mais+informa%C3%A7%C3%B5es+sobre+O+DESAFIO.+Voc%C3%AA+poderia+me+ajudar%3F&type=phone_number&app_absent=0'
-
 const highlights = [
   { icon: '🏠', title: 'Propriedades a partir de $50', desc: 'Acesso a imóveis em leilões de tax lien e tax deed com entrada acessível.' },
   { icon: '💰', title: 'Dinheiro trabalhando por você', desc: 'Aprenda formas de fazer o capital se multiplicar sem trocar tempo por dinheiro.' },
@@ -10,7 +8,6 @@ export default function ValueProp() {
   return (
     <section className="bg-brand-dark-2 py-20 px-4">
       <div className="max-w-6xl mx-auto">
-        {/* Section header */}
         <div className="text-center mb-16 reveal">
           <span className="text-brand-gold text-sm font-bold uppercase tracking-widest mb-3 block">Por que a Expedição?</span>
           <h2 className="section-title text-white mb-4">
@@ -22,7 +19,6 @@ export default function ValueProp() {
           </p>
         </div>
 
-        {/* Feature cards */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
           {highlights.map((item, i) => (
             <div key={i} className="card-dark text-center reveal hover:border-brand-gold/30 transition-colors duration-300">
@@ -33,7 +29,6 @@ export default function ValueProp() {
           ))}
         </div>
 
-        {/* Marcos visual block */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div className="reveal">
             <div className="flex gap-4 justify-center md:justify-start">
@@ -49,9 +44,9 @@ export default function ValueProp() {
             <p className="text-white/60 text-sm sm:text-base mb-6 leading-relaxed">
               Tudo que você DEVE FAZER e principalmente tudo que você NÃO DEVE FAZER para não perder dinheiro. Você entra iniciante pela manhã e sai à noite preparado para lucrar com propriedades de leilão.
             </p>
-            <a href={CTA_LINK} target="_blank" rel="noopener noreferrer" className="btn-gold inline-block">
+            <button className="btn-gold inline-block cursor-default">
               Quero estar ao vivo com o Caçador!
-            </a>
+            </button>
           </div>
         </div>
       </div>

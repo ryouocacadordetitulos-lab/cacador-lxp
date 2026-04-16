@@ -1,5 +1,3 @@
-const CTA_LINK = 'https://api.whatsapp.com/send/?phone=17623472427&text=Ol%C3%A1%21+Gostaria+de+receber+mais+informa%C3%A7%C3%B5es+sobre+O+DESAFIO.+Voc%C3%AA+poderia+me+ajudar%3F&type=phone_number&app_absent=0'
-
 const testimonials = [
   {
     img: './assets/testimonial1.webp',
@@ -40,7 +38,6 @@ function Stars({ n }) {
 export default function Testimonials() {
   return (
     <section className="bg-brand-dark py-20 px-4 relative overflow-hidden">
-      {/* Background glow */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-brand-gold/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-6xl mx-auto">
@@ -55,16 +52,9 @@ export default function Testimonials() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {testimonials.map((t, i) => (
-            <div
-              key={i}
-              className="reveal card-dark flex flex-col items-start hover:border-brand-gold/20 transition-colors duration-300"
-            >
+            <div key={i} className="reveal card-dark flex flex-col items-start hover:border-brand-gold/20 transition-colors duration-300">
               <div className="flex items-center gap-3 mb-4">
-                <img
-                  src={t.img}
-                  alt={t.name}
-                  className="w-12 h-12 rounded-full object-cover border-2 border-brand-gold/30"
-                />
+                <img src={t.img} alt={t.name} className="w-12 h-12 rounded-full object-cover border-2 border-brand-gold/30" />
                 <span className="text-white/70 text-xs font-medium">{t.name}</span>
               </div>
               <Stars n={t.stars} />
@@ -73,7 +63,6 @@ export default function Testimonials() {
           ))}
         </div>
 
-        {/* Stats bar */}
         <div className="reveal grid grid-cols-2 sm:grid-cols-4 gap-px bg-white/10 rounded-2xl overflow-hidden mb-12">
           {[
             { val: '500+', label: 'Alunos formados' },
@@ -89,9 +78,9 @@ export default function Testimonials() {
         </div>
 
         <div className="text-center reveal">
-          <a href={CTA_LINK} target="_blank" rel="noopener noreferrer" className="btn-gold-lg inline-block">
+          <button className="btn-gold-lg inline-block cursor-default">
             Quero fazer parte da Expedição!
-          </a>
+          </button>
         </div>
       </div>
     </section>

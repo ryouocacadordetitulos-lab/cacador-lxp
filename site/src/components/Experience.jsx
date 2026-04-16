@@ -1,5 +1,3 @@
-const CTA_LINK = 'https://api.whatsapp.com/send/?phone=17623472427&text=Ol%C3%A1%21+Gostaria+de+receber+mais+informa%C3%A7%C3%B5es+sobre+O+DESAFIO.+Voc%C3%AA+poderia+me+ajudar%3F&type=phone_number&app_absent=0'
-
 export default function Experience() {
   return (
     <section
@@ -44,9 +42,9 @@ export default function Experience() {
         </div>
 
         <div className="reveal">
-          <a href={CTA_LINK} target="_blank" rel="noopener noreferrer" className="btn-gold-lg inline-block">
+          <button className="btn-gold-lg inline-block cursor-default">
             Quero estar ao vivo com o Caçador!!
-          </a>
+          </button>
           <p className="text-white/40 text-xs mt-4">Comunidade ideal para imigrantes latinos, investidores iniciantes e profissionais em transição de carreira</p>
         </div>
       </div>

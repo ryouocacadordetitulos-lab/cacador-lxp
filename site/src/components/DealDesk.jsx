@@ -1,16 +1,11 @@
-const CTA_LINK = 'https://api.whatsapp.com/send/?phone=17623472427&text=Ol%C3%A1%21+Gostaria+de+receber+mais+informa%C3%A7%C3%B5es+sobre+O+DESAFIO.+Voc%C3%AA+poderia+me+ajudar%3F&type=phone_number&app_absent=0'
-
 export default function DealDesk() {
   return (
     <section
       className="relative py-24 px-4 overflow-hidden"
       style={{ background: 'linear-gradient(135deg, #0d1117 0%, #1a1200 100%)' }}
     >
-      {/* Gold accent lines */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-gold to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-gold to-transparent" />
-
-      {/* Background glow */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-brand-gold/5 blur-3xl" />
       </div>
@@ -50,9 +45,9 @@ export default function DealDesk() {
           </p>
         </div>
 
-        <a href={CTA_LINK} target="_blank" rel="noopener noreferrer" className="btn-gold-lg inline-block reveal">
+        <button className="btn-gold-lg inline-block reveal cursor-default">
           Quero comprar minha propriedade no leilão!
-        </a>
+        </button>
       </div>
     </section>
   )

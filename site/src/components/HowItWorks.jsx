@@ -1,5 +1,3 @@
-const CTA_LINK = 'https://api.whatsapp.com/send/?phone=17623472427&text=Ol%C3%A1%21+Gostaria+de+receber+mais+informa%C3%A7%C3%B5es+sobre+O+DESAFIO.+Voc%C3%AA+poderia+me+ajudar%3F&type=phone_number&app_absent=0'
-
 const phases = [
   {
     phase: 'Fase 01',
@@ -51,10 +49,7 @@ export default function HowItWorks() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {phases.map((phase, i) => (
-            <div
-              key={i}
-              className={`reveal relative bg-gradient-to-br ${phase.color} border ${phase.border} rounded-2xl p-6 sm:p-8`}
-            >
+            <div key={i} className={`reveal relative bg-gradient-to-br ${phase.color} border ${phase.border} rounded-2xl p-6 sm:p-8`}>
               <div className="flex items-center gap-3 mb-6">
                 <span className={`text-xs font-black uppercase tracking-widest ${phase.accent} bg-black/30 px-3 py-1 rounded-full`}>
                   {phase.phase}
@@ -73,22 +68,16 @@ export default function HowItWorks() {
           ))}
         </div>
 
-        {/* Phone mockups */}
         <div className="reveal flex justify-center gap-4 sm:gap-6 mb-12 flex-wrap">
           {['./assets/phone1.png', './assets/phone2.png', './assets/phone3.png', './assets/phone4.png'].map((src, i) => (
-            <img
-              key={i}
-              src={src}
-              alt="App screenshot"
-              className="h-36 sm:h-48 w-auto rounded-xl shadow-2xl border border-white/10 hover:border-brand-gold/30 transition-colors duration-300"
-            />
+            <img key={i} src={src} alt="App screenshot" className="h-36 sm:h-48 w-auto rounded-xl shadow-2xl border border-white/10 hover:border-brand-gold/30 transition-colors duration-300" />
           ))}
         </div>
 
         <div className="text-center reveal">
-          <a href={CTA_LINK} target="_blank" rel="noopener noreferrer" className="btn-gold-lg inline-block">
+          <button className="btn-gold-lg inline-block cursor-default">
             Quero estar ao vivo com o Caçador!!
-          </a>
+          </button>
         </div>
       </div>
     </section>

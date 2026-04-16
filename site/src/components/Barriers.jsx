@@ -1,5 +1,3 @@
-const CTA_LINK = 'https://api.whatsapp.com/send/?phone=17623472427&text=Ol%C3%A1%21+Gostaria+de+receber+mais+informa%C3%A7%C3%B5es+sobre+O+DESAFIO.+Voc%C3%AA+poderia+me+ajudar%3F&type=phone_number&app_absent=0'
-
 const barriers = [
   {
     problem: 'Você não tem dinheiro suficiente',
@@ -38,7 +36,6 @@ export default function Barriers() {
               key={i}
               className="reveal grid grid-cols-1 md:grid-cols-2 gap-0 rounded-2xl overflow-hidden border border-white/10"
             >
-              {/* Problem */}
               <div className="bg-white/5 p-6 flex items-center gap-4">
                 <span className="text-3xl">{item.icon}</span>
                 <div>
@@ -48,21 +45,18 @@ export default function Barriers() {
                   </p>
                 </div>
               </div>
-              {/* Solution */}
               <div className="bg-brand-gold/10 border-l border-brand-gold/20 p-6 flex items-center gap-4">
                 <div className="flex-shrink-0 w-8 h-8 rounded-full bg-brand-gold flex items-center justify-center text-black font-black text-sm">✓</div>
-                <p className="text-white/90 text-sm sm:text-base leading-relaxed">
-                  {item.solution}
-                </p>
+                <p className="text-white/90 text-sm sm:text-base leading-relaxed">{item.solution}</p>
               </div>
             </div>
           ))}
         </div>
 
         <div className="text-center reveal">
-          <a href={CTA_LINK} target="_blank" rel="noopener noreferrer" className="btn-gold-lg inline-block">
+          <button className="btn-gold-lg inline-block cursor-default">
             Quero comprar minha propriedade no leilão!
-          </a>
+          </button>
         </div>
       </div>
     </section>

@@ -1,5 +1,3 @@
-const CTA_LINK = 'https://api.whatsapp.com/send/?phone=17623472427&text=Ol%C3%A1%21+Gostaria+de+receber+mais+informa%C3%A7%C3%B5es+sobre+O+DESAFIO.+Voc%C3%AA+poderia+me+ajudar%3F&type=phone_number&app_absent=0'
-
 const steps = [
   { num: '1', label: 'Faça seu depósito de US$397 e garanta sua vaga' },
   { num: '2', label: 'Participe da Expedição e compre sua primeira propriedade' },
@@ -21,7 +19,6 @@ export default function Refund() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          {/* Steps */}
           <div className="space-y-4 reveal">
             {steps.map((step) => (
               <div
@@ -36,7 +33,6 @@ export default function Refund() {
             ))}
           </div>
 
-          {/* Info block */}
           <div className="reveal">
             <div className="bg-gradient-to-br from-brand-gold/10 to-transparent border border-brand-gold/30 rounded-2xl p-6 sm:p-8">
               <div className="text-4xl sm:text-5xl font-black text-brand-gold mb-2">$397</div>
@@ -44,19 +40,14 @@ export default function Refund() {
               <p className="text-white/60 text-sm leading-relaxed mb-6">
                 Eu chamei isso de <strong className="text-white">depósito</strong> — não de taxa — porque ao final da jornada, quando sua oferta de compra for aceita pelo condado, você envia um vídeo de depoimento e recebe seu dinheiro de volta.
               </p>
-              <a
-                href="https://lp.cacadordetitulos.com/reembolso"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-brand-gold text-sm underline underline-offset-4 hover:text-brand-gold-light transition-colors"
-              >
-                *Entenda mais sobre o reembolso especial →
-              </a>
+              <p className="text-brand-gold text-sm font-medium">
+                *Entenda mais sobre o reembolso especial com nossa equipe.
+              </p>
             </div>
 
-            <a href={CTA_LINK} target="_blank" rel="noopener noreferrer" className="btn-gold w-full text-center mt-6 block">
+            <button className="btn-gold w-full text-center mt-6 block cursor-default">
               Quero fazer parte da Expedição!
-            </a>
+            </button>
           </div>
         </div>
       </div>

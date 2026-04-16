@@ -1,31 +1,4 @@
-import { useState, useEffect } from 'react'
-
-const CTA_LINK = 'https://api.whatsapp.com/send/?phone=17623472427&text=Ol%C3%A1%21+Gostaria+de+receber+mais+informa%C3%A7%C3%B5es+sobre+O+DESAFIO.+Voc%C3%AA+poderia+me+ajudar%3F&type=phone_number&app_absent=0'
-
-function useCountdown(targetDate) {
-  const [timeLeft, setTimeLeft] = useState({})
-  useEffect(() => {
-    const calc = () => {
-      const diff = new Date(targetDate) - new Date()
-      if (diff <= 0) return setTimeLeft({ d: 0, h: 0, m: 0, s: 0 })
-      setTimeLeft({
-        d: Math.floor(diff / 86400000),
-        h: Math.floor((diff % 86400000) / 3600000),
-        m: Math.floor((diff % 3600000) / 60000),
-        s: Math.floor((diff % 60000) / 1000),
-      })
-    }
-    calc()
-    const t = setInterval(calc, 1000)
-    return () => clearInterval(t)
-  }, [targetDate])
-  return timeLeft
-}
-
 export default function Hero() {
-  const target = new Date()
-  target.setDate(target.getDate() + 3)
-  const { d, h, m, s } = useCountdown(target)
 
   return (
     <section className="relative min-h-screen flex flex-col justify-center items-center text-center overflow-hidden">
@@ -71,32 +44,10 @@ export default function Hero() {
           Junte-se ao melhor programa <strong className="text-white">PRÁTICO</strong> para iniciantes no mercado imobiliário americano.
         </p>
 
-        {/* Countdown */}
-        <div className="flex justify-center gap-6 sm:gap-10 mb-10">
-          {[
-            { val: d, label: 'Dias' },
-            { val: h, label: 'Horas' },
-            { val: m, label: 'Min' },
-            { val: s, label: 'Seg' },
-          ].map(({ val, label }) => (
-            <div key={label} className="countdown-block">
-              <div className="bg-black/60 border border-brand-gold/30 rounded-xl px-4 py-3 min-w-[64px] backdrop-blur-sm">
-                <span className="countdown-number">{String(val ?? 0).padStart(2, '0')}</span>
-              </div>
-              <span className="countdown-label">{label}</span>
-            </div>
-          ))}
-        </div>
-
         {/* CTA */}
-        <a
-          href={CTA_LINK}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-gold-lg inline-block"
-        >
+        <button className="btn-gold-lg inline-block cursor-default">
           🔥 Quero fazer parte da Expedição!
-        </a>
+        </button>
 
         <p className="text-white/50 text-xs mt-4">
           Depósito reembolsável de US$397 · Vagas limitadas
