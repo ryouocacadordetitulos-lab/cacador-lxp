@@ -4,7 +4,7 @@ export default function Guarantee() {
       <div className="max-w-4xl mx-auto">
         <div className="reveal bg-gradient-to-br from-white/5 to-transparent border border-white/10 rounded-3xl p-8 sm:p-12 text-center">
           <div className="flex justify-center mb-6">
-            <img src="/assets/garantia.png" alt="Garantia" className="h-16 w-auto" />
+            <img src="./assets/garantia.png" alt="Garantia" className="h-16 w-auto" />
           </div>
           <span className="text-brand-gold text-sm font-bold uppercase tracking-widest mb-4 block">Risco zero</span>
           <h2 className="text-2xl sm:text-3xl font-black text-white uppercase mb-6">

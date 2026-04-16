@@ -37,8 +37,8 @@ export default function ValueProp() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div className="reveal">
             <div className="flex gap-4 justify-center md:justify-start">
-              <img src="/assets/marcos1.png" alt="Marcos Jacober" className="w-36 sm:w-44 rounded-2xl border-2 border-brand-gold/30 shadow-2xl" />
-              <img src="/assets/marcos2.png" alt="Marcos Jacober" className="w-36 sm:w-44 rounded-2xl border-2 border-brand-gold/30 shadow-2xl mt-6" />
+              <img src="./assets/marcos1.png" alt="Marcos Jacober" className="w-36 sm:w-44 rounded-2xl border-2 border-brand-gold/30 shadow-2xl" />
+              <img src="./assets/marcos2.png" alt="Marcos Jacober" className="w-36 sm:w-44 rounded-2xl border-2 border-brand-gold/30 shadow-2xl mt-6" />
             </div>
           </div>
           <div className="reveal text-center md:text-left">

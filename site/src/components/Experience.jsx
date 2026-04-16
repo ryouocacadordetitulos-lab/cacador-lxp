@@ -5,7 +5,7 @@ export default function Experience() {
     <section
       className="relative py-24 px-4 overflow-hidden"
       style={{
-        backgroundImage: "url('/assets/cta-bg.jpg')",
+        backgroundImage: "url('./assets/cta-bg.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',

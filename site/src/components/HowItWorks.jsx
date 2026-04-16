@@ -75,7 +75,7 @@ export default function HowItWorks() {
 
         {/* Phone mockups */}
         <div className="reveal flex justify-center gap-4 sm:gap-6 mb-12 flex-wrap">
-          {['/assets/phone1.png', '/assets/phone2.png', '/assets/phone3.png', '/assets/phone4.png'].map((src, i) => (
+          {['./assets/phone1.png', './assets/phone2.png', './assets/phone3.png', './assets/phone4.png'].map((src, i) => (
             <img
               key={i}
               src={src}

@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="bg-brand-dark border-t border-white/10 py-10 px-4">
       <div className="max-w-5xl mx-auto">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
-          <img src="/assets/logo.png" alt="Caçador de Títulos" className="h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+          <img src="./assets/logo.png" alt="Caçador de Títulos" className="h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" />
 
           <div className="flex flex-wrap justify-center gap-6 text-white/40 text-xs">
             <a

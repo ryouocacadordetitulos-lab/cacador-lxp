@@ -8,7 +8,7 @@ const bonuses = [
       'Como o Tax Lien funciona',
       'Ebook "150 Formas de Fazer Dinheiro"',
     ],
-    icon: '/assets/bonus1.png',
+    icon: './assets/bonus1.png',
   },
   {
     tag: 'BÔNUS EXTRA 🎁',
@@ -19,7 +19,7 @@ const bonuses = [
       'Veja e reveja quantas vezes quiser',
       'Prepare-se para a jornada de mudança financeira',
     ],
-    icon: '/assets/mockup.png',
+    icon: './assets/mockup.png',
   },
 ]
 

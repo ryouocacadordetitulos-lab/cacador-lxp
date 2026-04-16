@@ -32,7 +32,7 @@ export default function Hero() {
       {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/assets/hero-bg.jpg')" }}
+        style={{ backgroundImage: "url('./assets/hero-bg.jpg')" }}
       />
       <div className="absolute inset-0 bg-gradient-hero" />
 
@@ -44,7 +44,7 @@ export default function Hero() {
       <div className="relative z-10 px-4 sm:px-6 max-w-5xl mx-auto py-20">
         {/* Logo */}
         <div className="flex justify-center mb-8">
-          <img src="/assets/logo.png" alt="Caçador de Títulos" className="h-16 sm:h-20 w-auto drop-shadow-2xl" />
+          <img src="./assets/logo.png" alt="Caçador de Títulos" className="h-16 sm:h-20 w-auto drop-shadow-2xl" />
         </div>
 
         {/* Badge */}

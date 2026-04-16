@@ -2,25 +2,25 @@ const CTA_LINK = 'https://api.whatsapp.com/send/?phone=17623472427&text=Ol%C3%A1
 
 const testimonials = [
   {
-    img: '/assets/testimonial1.webp',
+    img: './assets/testimonial1.webp',
     name: 'Aluno da Expedição',
     text: 'Consegui comprar minha primeira propriedade nos EUA ainda durante o programa. O método é incrível e o suporte da equipe fez toda a diferença!',
     stars: 5,
   },
   {
-    img: '/assets/testimonial2.webp',
+    img: './assets/testimonial2.webp',
     name: 'Aluno da Expedição',
     text: 'Nunca imaginei que conseguiria investir no mercado americano. A Expedição me mostrou que é totalmente possível, mesmo do Brasil.',
     stars: 5,
   },
   {
-    img: '/assets/testimonial3.webp',
+    img: './assets/testimonial3.webp',
     name: 'Aluna da Expedição',
     text: 'Em apenas 1 dia aprendi mais do que em meses de pesquisa sozinha. Valeu muito cada centavo do depósito — e ainda vou receber de volta!',
     stars: 5,
   },
   {
-    img: '/assets/testimonial4.webp',
+    img: './assets/testimonial4.webp',
     name: 'Aluno da Expedição',
     text: 'O Deal Desk foi o diferencial. Poder contar com o capital da equipe para meu primeiro investimento me deu a confiança que eu precisava.',
     stars: 5,
